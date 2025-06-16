@@ -1,57 +1,57 @@
 {
   "Error": {
-    "description": "<p>We've unfortunately encountered an error.</p><p>You can try to <retry>reload the page</retry> you were visiting.</p>",
+    "description": "Unfortunately, an error occurred.\n\nYou can try <retry>reloading</retry> the page you were visiting.\n\n",
     "title": "Something went wrong!"
   },
   "IndexPage": {
-    "description": "Advanced technologies, attentive approach, full support.",
-    "title": "Treatment for medical tourists in South Korea.",
-    "getConsultation": "Get consultation",
-    "title-how": "How to Receive Treatment",
+    "description": "Full-service medical travel organization to the best clinics in South Korea.",
+    "title": "NS Med Travel.  Treatment in South Korea with comfort.",
+    "getConsultation": "Get a consultation",
+    "title-how": "How to get treatment",
     "steps": {
       "step1": {
-        "title": "Submit Request",
-        "desc": "Fill out a short form or contact us via messenger."
+        "title": "Send a request",
+        "desc": "Fill out the short form or contact us via messenger."
       },
       "step2": {
         "title": "Consultation",
-        "desc": "We’ll recommend a hospital and estimate the cost."
+        "desc": "We will recommend a hospital and estimate the cost."
       },
       "step3": {
         "title": "Trip to Korea",
-        "desc": "We’ll help arrange your travel and accommodation."
+        "desc": "We will help organize your trip and accommodation."
       },
       "step4": {
         "title": "Treatment",
-        "desc": "You’ll receive treatment in the selected clinic."
+        "desc": "You will receive treatment at the chosen clinic."
       }
     },
     "section": {
-      "hospitals": "Korea Hospitals",
+      "hospitals": "Korean hospitals",
       "departments": "Medical Departments"
     },
     "hospitals": {
       "hospital1": {
-        "title": "Asan Hospital",
-        "desc": "Multidisciplinary hospital with advanced equipment."
+        "title": "Asan Medical Center",
+        "desc": "Multidisciplinary hospital with state-of-the-art equipment."
       },
       "hospital2": {
-        "title": "Haeundae Paik",
+        "title": "Hyundai Baek",
         "desc": "Popular among international patients."
       },
       "hospital3": {
-        "title": "Dong-A University",
-        "desc": "University hospital with strong oncology department."
+        "title": "Dong-A University Hospital",
+        "desc": "University hospital with a strong oncology department."
       }
     },
     "departments": {
       "ortho": {
         "title": "Orthopedics",
-        "desc": "Knee, spine, and joint treatment."
+        "desc": "Treatment of knee, spine, and joint diseases."
       },
       "ent": {
-        "title": "Otorhinolaryngology",
-        "desc": "Throat, nose, and ear issues."
+        "title": "Otolaryngology",
+        "desc": "Treatment of ear, nose, and throat diseases."
       },
       "dental": {
         "title": "Dentistry",
@@ -59,66 +59,67 @@
       },
       "oncology": {
         "title": "Oncology",
-        "desc": "Diagnosis and treatment of cancer."
+        "desc": "Cancer diagnosis and treatment."
       },
       "plastic": {
         "title": "Plastic Surgery",
-        "desc": "Aesthetic and reconstructive procedures."
+        "desc": "Aesthetic and Reconstructive Procedures."
       },
       "dermatology": {
         "title": "Dermatology",
-        "desc": "Diagnosis and treatment of skin, hair, and nail conditions."
+        "desc": "Diagnosis and treatment of skin, hair, and nail diseases."
       }
     }
   },
   "ContactForm": {
     "title": "Contact Us",
-    "description": "The consultant manager will assist you with all inquiries. Contact them to learn about clinics and the cost of treatment in Korea.",
-    "name": "Your name",
-    "email": "Email address",
-    "message": "Your message",
+    "description": "Our consultant will assist you with all your inquiries. Contact them to learn about clinics and treatment costs in Korea.",
+    "name": "Your Name",
+    "email": "Email Address",
+    "message": "Your Message",
     "submit": "Send"
   },
   "LocaleLayout": {
     "title": "NS Medical"
   },
   "LocaleSwitcher": {
-    "label": "Change language",
-    "locale": "{locale, select, ru {🇷🇺 Russian } en {🇺🇸 English} ko {🇰🇷 Korean} other {Unknown}}"
+    "label": "Change Language",
+    "locale": "{locale, select, ru {🇷🇺 Русский} en {🇺🇸 English} ko {🇰🇷 Korean} other {Unknown}}"
   },
   "Manifest": {
-    "name": "next-intl example"
+    "name": "example next-intl"
   },
   "Navigation": {
-    "name": "NS Medical",
+    "name": "Med Travel",
     "home": "Home",
-    "pathnames": "Pathnames",
-    "about": "About",
-    "contacts": "Contacts",
+    "pathnames": "Access Paths",
+    "about": "About Us",
+    "contacts": "Contact Us",
     "services": "Services",
-    "close_menu": "Закрыть меню",
-    "open_menu": "Открытьм меню"
+    "help": "Contact Coordinator",
+    "close_menu": "Close Menu",
+    "open_menu": "Open Menu"
   },
   "NotFoundPage": {
-    "description": "Please double-check the browser address bar or use the navigation to go to a known page.",
-    "title": "Page not found"
+    "description": "Please check your browser's address bar or use the navigation to go to a known page.",
+    "title": "Page Not Found"
   },
   "PageLayout": {
     "links": {
       "docs": {
-        "description": "Learn more about next-intl in the official docs.",
+        "description": "Learn more about next-intl in the official documentation.",
         "href": "https://next-intl.dev",
-        "title": "Docs"
+        "title": "Documentation"
       },
       "source": {
-        "description": "Browse the source code of this example on GitHub.",
+        "description": "View the source code for this example on GitHub.",
         "href": "https://github.com/amannn/next-intl/tree/main/examples/example-app-router",
-        "title": "Source code"
+        "title": "Source Code"
       }
     }
   },
   "PathnamesPage": {
     "description": "",
-    "title": "Pathnames"
+    "title": "Paths"
   }
 }

@@ -25,9 +25,7 @@ export function Hero() {
         {/* Контентный блок (2/3)  lg:grid-cols-2 lg:col-span-1*/}
         <div className="text-center px-4 lg:px0">
           <h1 className="uppercase text-4xl md:text-6xl font-bold mb-4">
-            {t.rich('title', {
-              br: () => <br />
-            })}
+            {t.rich('title')}
           </h1>
           <p className="text-xl mb-8 ">{t.rich('description')}</p>
           <Button href="/contacts" className='bg-background !text-gray-800 hover:bg-background/80'>{t('getConsultation')}</Button>
