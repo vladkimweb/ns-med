@@ -1,0 +1,124 @@
+{
+  "Error": {
+    "description": "<p>We've unfortunately encountered an error.</p><p>You can try to <retry>reload the page</retry> you were visiting.</p>",
+    "title": "Something went wrong!"
+  },
+  "IndexPage": {
+    "description": "Advanced technologies, attentive approach, full support.",
+    "title": "Treatment for medical tourists in South Korea.",
+    "getConsultation": "Get consultation",
+    "title-how": "How to Receive Treatment",
+    "steps": {
+      "step1": {
+        "title": "Submit Request",
+        "desc": "Fill out a short form or contact us via messenger."
+      },
+      "step2": {
+        "title": "Consultation",
+        "desc": "We’ll recommend a hospital and estimate the cost."
+      },
+      "step3": {
+        "title": "Trip to Korea",
+        "desc": "We’ll help arrange your travel and accommodation."
+      },
+      "step4": {
+        "title": "Treatment",
+        "desc": "You’ll receive treatment in the selected clinic."
+      }
+    },
+    "section": {
+      "hospitals": "Korea Hospitals",
+      "departments": "Medical Departments"
+    },
+    "hospitals": {
+      "hospital1": {
+        "title": "Asan Hospital",
+        "desc": "Multidisciplinary hospital with advanced equipment."
+      },
+      "hospital2": {
+        "title": "Haeundae Paik",
+        "desc": "Popular among international patients."
+      },
+      "hospital3": {
+        "title": "Dong-A University",
+        "desc": "University hospital with strong oncology department."
+      }
+    },
+    "departments": {
+      "ortho": {
+        "title": "Orthopedics",
+        "desc": "Knee, spine, and joint treatment."
+      },
+      "ent": {
+        "title": "Otorhinolaryngology",
+        "desc": "Throat, nose, and ear issues."
+      },
+      "dental": {
+        "title": "Dentistry",
+        "desc": "Implants, surgery, and whitening."
+      },
+      "oncology": {
+        "title": "Oncology",
+        "desc": "Diagnosis and treatment of cancer."
+      },
+      "plastic": {
+        "title": "Plastic Surgery",
+        "desc": "Aesthetic and reconstructive procedures."
+      },
+      "dermatology": {
+        "title": "Dermatology",
+        "desc": "Diagnosis and treatment of skin, hair, and nail conditions."
+      }
+    }
+  },
+  "ContactForm": {
+    "title": "Contact Us",
+    "description": "The consultant manager will assist you with all inquiries. Contact them to learn about clinics and the cost of treatment in Korea.",
+    "name": "Your name",
+    "email": "Email address",
+    "message": "Your message",
+    "submit": "Send"
+  },
+  "LocaleLayout": {
+    "title": "NS Medical"
+  },
+  "LocaleSwitcher": {
+    "label": "Change language",
+    "locale": "{locale, select, ru {🇷🇺 Russian } en {🇺🇸 English} ko {🇰🇷 Korean} other {Unknown}}"
+  },
+  "Manifest": {
+    "name": "next-intl example"
+  },
+  "Navigation": {
+    "name": "NS Medical",
+    "home": "Home",
+    "pathnames": "Pathnames",
+    "about": "About",
+    "contacts": "Contacts",
+    "services": "Services",
+    "close_menu": "Закрыть меню",
+    "open_menu": "Открытьм меню"
+  },
+  "NotFoundPage": {
+    "description": "Please double-check the browser address bar or use the navigation to go to a known page.",
+    "title": "Page not found"
+  },
+  "PageLayout": {
+    "links": {
+      "docs": {
+        "description": "Learn more about next-intl in the official docs.",
+        "href": "https://next-intl.dev",
+        "title": "Docs"
+      },
+      "source": {
+        "description": "Browse the source code of this example on GitHub.",
+        "href": "https://github.com/amannn/next-intl/tree/main/examples/example-app-router",
+        "title": "Source code"
+      }
+    }
+  },
+  "PathnamesPage": {
+    "description": "",
+    "title": "Pathnames"
+  }
+}
