@@ -16,14 +16,14 @@ export default function Button({ children, href, className }: Props) {
       className={clsx(
         // Базовый стиль
         'inline-flex items-center justify-center gap-2',
-        'px-6 py-3 rounded-2xl font-medium',
+        'px-6 py-4 rounded-2xl font-medium',
         'transition-all duration-300 ease-out',
         'transform hover:scale-105 active:scale-95',
 
         // Цвета и тени
-        'bg-accent text-white',
-        'hover:from-accent hover:to-secondary',
-        'shadow-lg hover:shadow-secondary/30',
+        'bg-primary text-white',
+        'hover:to-blue-500',
+        'shadow-lg hover:shadow-blue/30',
 
         // Размеры
         'w-fit max-w-full',
@@ -33,7 +33,7 @@ export default function Button({ children, href, className }: Props) {
       )}
     >
       <span>{children}</span>
-      <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
+      {/* <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" /> */}
     </Link>
   );
 }

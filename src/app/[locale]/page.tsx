@@ -5,7 +5,6 @@ import Step from '@/components/Step';
 import Card from '@/components/Card';
 import { Hospital } from 'lucide-react';
 import ContactForm from '@/components/ContactForm';
-import ScrollProgressBar from '@/components/ScrollProgressBar';
 import { Hero } from '@/components/Hero';
 
 
@@ -21,13 +20,13 @@ export default function IndexPage({ params }: Props) {
 
   return (
     <>
-      <ScrollProgressBar />
+
       <Hero />
-      <main className='relative container mx-auto'>
+      <main className='relative container mx-auto px-4 lg:px-0'>
 
         {/* Направления лечения */}
         <section>
-          <h2 className="text-center text-2xl md:text-4xl font-bold text-primary">{t('section.departments')}</h2>
+          <h2 className="text-center text-3xl md:text-4xl uppercase font-bold text-primary">{t('section.departments')}</h2>
           <div className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
             <Card
               title={t('departments.dental.title')}
@@ -50,7 +49,7 @@ export default function IndexPage({ params }: Props) {
 
         {/* Как получить лечение */}
         <section>
-          <h2 className="text-center text-2xl md:text-4xl font-bold text-primary">{t('title-how')}</h2>
+          <h2 className="text-center text-3xl md:text-4xl  uppercase font-bold text-primary">{t('title-how')}</h2>
           <div className="mt-10">
             <Step number={1} title={t('steps.step1.title')} description={t('steps.step1.desc')} />
             <Step number={2} title={t('steps.step2.title')} description={t('steps.step2.desc')} />

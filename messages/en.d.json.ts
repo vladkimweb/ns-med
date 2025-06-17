@@ -3,126 +3,126 @@
 
 declare const messages: {
   "Error": {
-    "description": "<p>We've unfortunately encountered an error.</p><p>You can try to <retry>reload the page</retry> you were visiting.</p>",
+    "description": "Unfortunately, an error occurred.\n\nYou can try <retry>reloading</retry> the page you were visiting.\n\n",
     "title": "Something went wrong!"
   },
   "IndexPage": {
-    "description": "Advanced technologies, attentive approach, full support.",
-    "title": "Treatment for medical tourists in South Korea.",
-    "getConsultation": "Get consultation",
-    "title-how": "How to Receive Treatment",
+    "description": "Full-service medical travel organization to the best clinics in South Korea.",
+    "title": "Treatment in South Korea with comfort.",
+    "title-how": "How to get treatment",
     "steps": {
       "step1": {
-        "title": "Submit Request",
-        "desc": "Fill out a short form or contact us via messenger."
+        "title": "Send a request",
+        "desc": "Fill out the short form or contact us via messenger."
       },
       "step2": {
         "title": "Consultation",
-        "desc": "We’ll recommend a hospital and estimate the cost."
+        "desc": "We will recommend a hospital and estimate the cost."
       },
       "step3": {
         "title": "Trip to Korea",
-        "desc": "We’ll help arrange your travel and accommodation."
+        "desc": "We will help organize your trip and accommodation."
       },
       "step4": {
         "title": "Treatment",
-        "desc": "You’ll receive treatment in the selected clinic."
+        "desc": "You will receive treatment at the chosen clinic."
       }
     },
     "section": {
-      "hospitals": "Korea Hospitals",
+      "hospitals": "Korean hospitals",
       "departments": "Medical Departments"
     },
-    "hospitals": {
-      "hospital1": {
-        "title": "Asan Hospital",
-        "desc": "Multidisciplinary hospital with advanced equipment."
-      },
-      "hospital2": {
-        "title": "Haeundae Paik",
-        "desc": "Popular among international patients."
-      },
-      "hospital3": {
-        "title": "Dong-A University",
-        "desc": "University hospital with strong oncology department."
-      }
-    },
     "departments": {
-      "ortho": {
-        "title": "Orthopedics",
-        "desc": "Knee, spine, and joint treatment."
-      },
-      "ent": {
-        "title": "Otorhinolaryngology",
-        "desc": "Throat, nose, and ear issues."
-      },
       "dental": {
         "title": "Dentistry",
         "desc": "Implants, surgery, and whitening."
       },
-      "oncology": {
-        "title": "Oncology",
-        "desc": "Diagnosis and treatment of cancer."
-      },
       "plastic": {
         "title": "Plastic Surgery",
-        "desc": "Aesthetic and reconstructive procedures."
+        "desc": "Aesthetic and Reconstructive Procedures."
       },
       "dermatology": {
         "title": "Dermatology",
-        "desc": "Diagnosis and treatment of skin, hair, and nail conditions."
+        "desc": "Diagnosis and treatment of skin, hair, and nail diseases."
       }
     }
-  },
-  "ContactForm": {
-    "title": "Contact Us",
-    "description": "The consultant manager will assist you with all inquiries. Contact them to learn about clinics and the cost of treatment in Korea.",
-    "name": "Your name",
-    "email": "Email address",
-    "message": "Your message",
-    "submit": "Send"
   },
   "LocaleLayout": {
     "title": "NS Medical"
   },
   "LocaleSwitcher": {
-    "label": "Change language",
-    "locale": "{locale, select, ru {🇷🇺 Russian } en {🇺🇸 English} ko {🇰🇷 Korean} other {Unknown}}"
+    "label": "Change Language",
+    "locale": "{locale, select, ru {🇷🇺 Русский} en {🇺🇸 English} ko {🇰🇷 Korean} other {Unknown}}"
   },
   "Manifest": {
-    "name": "next-intl example"
+    "name": "NS Med Travel"
   },
   "Navigation": {
-    "name": "NS Medical",
+    "name": "NS Med Travel",
     "home": "Home",
-    "pathnames": "Pathnames",
-    "about": "About",
+    "about": "About Us",
     "contacts": "Contacts",
     "services": "Services",
-    "close_menu": "Закрыть меню",
-    "open_menu": "Открытьм меню"
+    "call": "Call us",
+    "close_menu": "Close Menu",
+    "open_menu": "Open Menu"
   },
   "NotFoundPage": {
-    "description": "Please double-check the browser address bar or use the navigation to go to a known page.",
-    "title": "Page not found"
-  },
-  "PageLayout": {
-    "links": {
-      "docs": {
-        "description": "Learn more about next-intl in the official docs.",
-        "href": "https://next-intl.dev",
-        "title": "Docs"
-      },
-      "source": {
-        "description": "Browse the source code of this example on GitHub.",
-        "href": "https://github.com/amannn/next-intl/tree/main/examples/example-app-router",
-        "title": "Source code"
-      }
-    }
+    "description": "Please check your browser's address bar or use the navigation to go to a known page.",
+    "title": "Page Not Found"
   },
   "PathnamesPage": {
     "description": "",
-    "title": "Pathnames"
+    "title": "Paths"
+  },
+  "ContactForm": {
+    "formTitle": "Request a callback",
+    "getConsultation": "Get consultation",
+    "title": "Contact Us",
+    "nameLabel": "NAME",
+    "emailLabel": "E-MAIL",
+    "messageLabel": "MESSAGE",
+    "privacyText": "I agree with the privacy policy.",
+    "submitText": "SUBMIT",
+    "submittingText": "SENDING...",
+    "phoneLabel": "Phone number"
+  },
+  "ThanksPage": {
+    "title": "Thank You!",
+    "message": "Your message has been successfully sent. We'll contact you soon."
+  },
+  "Footer": {
+    "companyName": "NS Med Travel",
+    "companyDescription": "Organization of medical tourism to the best clinics in South Korea.",
+    "departments": {
+      "title": "Departments",
+      "dentistry": "Dentistry",
+      "plasticSurgery": "Plastic Surgery",
+      "dermatology": "Dermatology"
+    },
+    "contacts": {
+      "title": "Contacts",
+      "phone": "+7 (911) 946-07-07",
+      "availability": "24/7",
+      "email": "Email us",
+      "address": "16-1, Hogye-ro 438beon-gil, Gimhae-si, Gyeongsangnam-do"
+    },
+    "copyright": "© 2025 NS Med Travel. All rights reserved",
+    "privacyPolicy": "Privacy Policy",
+    "powerby": "Power by Vlad Kim"
+  },
+  "ModalForm": {
+    "getConsultation": "Get consultation",
+    "title": "Request a callback",
+    "close": "Close modal"
+  },
+  "Form": {
+    "nameLabel": "Full name",
+    "namePlaceholder": "Enter your name",
+    "emailLabel": "Email",
+    "emailPlaceholder": "your@email.com",
+    "submit": "Send request",
+    "submitting": "Sending..."
   }
 };
 export default messages;

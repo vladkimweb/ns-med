@@ -4,7 +4,8 @@
   --color-a: oklch(0.318 0.04 146.2);       /* тёмно-зелёный */
   --color-primary-dark: oklch(0.45 0.065 146.0);  /* насыщенный зелёный */
   --color-accent: oklch(0.57 0.08 113.7);         /* зелёно-оливковый */
-  --color-primary: oklch(0.63 0.096 113.3);     /* травяной */
+  /* --color-primary: oklch(0.63 0.096 113.3);     травяной */
+  --color-primary: oklch(0.7271 0.1411 262.47);
   --color-background: oklch(1 0 0);    /* тёплый фон */
   --color-secondary: oklch(0.75 0.135 101.3);    /* тёплый фон */
 }
@@ -13,12 +14,22 @@ html {
   font-family: var(--font-inter);
 }
  
-h1 {
+h1,h2 {
   font-family: var(--font-days-one);
+}
+h2{
+  margin-bottom: 4rem;
 }
 
 section {
-  margin-bottom: 200px;
-  margin-top: 120px;
+  margin-bottom: 180px;
+  margin-top: 180px;
+}
+
+@media (width <= 40rem){
+  section {
+    margin-bottom: 16px;
+    margin-top: 80px;
+  }
 }
  

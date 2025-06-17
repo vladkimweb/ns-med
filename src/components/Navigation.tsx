@@ -5,6 +5,7 @@ import LocaleSwitcher from './LocaleSwitcher';
 import NavigationLink from './NavigationLink';
 import { useState, useEffect } from 'react';
 import Image from 'next/image'
+import Button from './Button'
 
 export default function Navigation() {
   const t = useTranslations('Navigation');
@@ -17,7 +18,7 @@ export default function Navigation() {
   }, []);
 
   return (
-    <header className="fixed z-20 top-0 left-0 w-full bg-background shadow-sm">
+    <header className="z-20 top-0 left-0 w-full bg-background shadow-sm">
       <nav>
         {/* Десктопное меню */}
         <div className="hidden md:flex  justify-between py-2 container mx-auto">
@@ -29,19 +30,19 @@ export default function Navigation() {
               alt="Logo NS Group"
             // className='mr-23'
             />
-            <h3 className="text-xl text-gray-500 ">
+            <h3 className="text-2xl font-semibold text-gray-900 ">
               {t('name')}
             </h3>
           </span>
 
           <div className="flex flex-wrap items-center justify-center gap-6">
-            <NavigationLink href="/">{t('home')}</NavigationLink>
+            {/* <NavigationLink href="/">{t('home')}</NavigationLink> */}
             <NavigationLink href="/services">{t('services')}</NavigationLink>
             <NavigationLink href="/about">{t('about')}</NavigationLink>
             <NavigationLink href="/contacts">{t('contacts')}</NavigationLink>
-            <NavigationLink href="/contacts">{t('help')}</NavigationLink>
             <LocaleSwitcher />
           </div>
+          <Button href="/contacts">{t('call')}</Button>
 
 
         </div>
