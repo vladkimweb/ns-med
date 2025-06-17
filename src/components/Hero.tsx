@@ -1,5 +1,4 @@
 import Image from 'next/image';
-import Button from './Button';
 import { useTranslations } from 'next-intl';
 import { ModalForm } from './ModalForm';
 
