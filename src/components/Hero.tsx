@@ -9,7 +9,7 @@ export function Hero() {
       {/* Фоновое изображение */}
       <div className="absolute inset-0">
         <Image
-          src="/view1.jpg" // Укажите правильный путь к изображению
+          src="/hero.jpg" // Укажите правильный путь к изображению
           alt="Медицинский туризм"
           fill
           className="object-cover object-center"

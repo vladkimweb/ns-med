@@ -23,6 +23,7 @@ export default function Navigation() {
         {/* Десктопное меню */}
         <div className="hidden md:flex  justify-between py-2 container mx-auto">
           <span className='flex flex-wrap items-center gap-2'>
+
             <Image
               src="/logo.png"
               width={50}
@@ -30,9 +31,9 @@ export default function Navigation() {
               alt="Logo NS Group"
             // className='mr-23'
             />
-            <h3 className="text-2xl font-semibold text-gray-900 ">
+            <NavigationLink href="/"><h3 className="text-2xl font-semibold text-gray-900 ">
               {t('name')}
-            </h3>
+            </h3></NavigationLink>
           </span>
 
           <div className="flex flex-wrap items-center justify-center gap-6">
@@ -42,7 +43,7 @@ export default function Navigation() {
             <NavigationLink href="/contacts">{t('contacts')}</NavigationLink>
             <LocaleSwitcher />
           </div>
-          <Button href="/contacts">{t('call')}</Button>
+          <NavigationLink className="border-2 border-primary text-primary py-3 px-6 rounded-2xl" href="/contacts">{t('call')}</NavigationLink>
 
 
         </div>

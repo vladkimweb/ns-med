@@ -29,11 +29,6 @@ export default function IndexPage({ params }: Props) {
           <h2 className="text-center text-3xl md:text-4xl uppercase font-bold text-primary">{t('section.departments')}</h2>
           <div className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
             <Card
-              title={t('departments.dental.title')}
-              description={t('departments.dental.desc')}
-              icon={<Hospital />}
-            />
-            <Card
               title={t('departments.plastic.title')}
               description={t('departments.plastic.desc')}
               icon={<Hospital />}
@@ -43,6 +38,42 @@ export default function IndexPage({ params }: Props) {
               description={t('departments.dermatology.desc')}
               icon={<Hospital />}
             />
+            <Card
+              title={t('departments.dental.title')}
+              description={t('departments.dental.desc')}
+              icon={<Hospital />}
+            />
+            <Card
+              title={t('departments.internal.title')}
+              description={t('departments.internal.desc')}
+              icon={<Hospital />}
+            />
+            <Card
+              title={t('departments.ent.title')}
+              description={t('departments.ent.desc')}
+              icon={<Hospital />}
+            />
+            <Card
+              title={t('departments.obgyn.title')}
+              description={t('departments.obgyn.desc')}
+              icon={<Hospital />}
+            />
+            <Card
+              title={t('departments.checkup.title')}
+              description={t('departments.checkup.desc')}
+              icon={<Hospital />}
+            />
+            <Card
+              title={t('departments.ophthalmology.title')}
+              description={t('departments.ophthalmology.desc')}
+              icon={<Hospital />}
+            />
+            <Card
+              title={t('departments.oncology.title')}
+              description={t('departments.oncology.desc')}
+              icon={<Hospital />}
+            />
+
           </div>
         </section>
 

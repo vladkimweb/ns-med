@@ -41,6 +41,30 @@
       "dermatology": {
         "title": "Dermatology",
         "desc": "Diagnosis and treatment of skin, hair, and nail diseases."
+      },
+      "internal": {
+        "title": "Internal Medicine",
+        "desc": "Treatment of internal organ diseases, including hypertension and diabetes."
+      },
+      "ent": {
+        "title": "Otolaryngology (ENT)",
+        "desc": "Treatment of ear, nose, and throat conditions."
+      },
+      "obgyn": {
+        "title": "Obstetrics & Gynecology",
+        "desc": "Women's health, pregnancy care, and childbirth."
+      },
+      "checkup": {
+        "title": "Health Check-up",
+        "desc": "Full-body screening and diagnostics."
+      },
+      "ophthalmology": {
+        "title": "Ophthalmology",
+        "desc": "Vision correction, cataract, and eye disease treatment."
+      },
+      "oncology": {
+        "title": "Oncology",
+        "desc": "Cancer diagnosis and treatment using advanced technologies."
       }
     }
   },

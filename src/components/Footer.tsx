@@ -11,7 +11,7 @@ export function Footer() {
     <footer className="bg-black text-white pt-12 pb-8">
       <div className="container mx-auto px-4">
         {/* Основные разделы */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8 mb-8">
 
           {/* О компании */}
           <div className="space-y-4">
@@ -31,7 +31,7 @@ export function Footer() {
           </div>
 
           {/* Направления */}
-          <div className="space-y-4">
+          {/* <div className="space-y-4">
             <h4 className="text-lg font-semibold">{t('departments.title')}</h4>
             <ul className="space-y-2 text-gray-300">
               <li>
@@ -50,7 +50,7 @@ export function Footer() {
                 </Link>
               </li>
             </ul>
-          </div>
+          </div> */}
 
           {/* Контакты */}
           <div className="space-y-4">
