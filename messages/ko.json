@@ -70,7 +70,9 @@
     }
   },
   "LocaleLayout": {
-    "title": "NS Medical"
+    "title": "한국 의료 관광 | NS Medical",
+    "description": "최고의 병원, 건강 검진, 성형외과 등 다양한 의료 서비스 제공.",
+    "keywords": "한국, 의료 관광, 성형 수술, 건강 검진"
   },
   "LocaleSwitcher": {
     "label": "언어 변경",

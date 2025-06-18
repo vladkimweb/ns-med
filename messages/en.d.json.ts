@@ -72,7 +72,9 @@ declare const messages: {
     }
   },
   "LocaleLayout": {
-    "title": "NS Medical"
+    "title": "Medical Tourism in Korea | NS Medical",
+    "description": "Top clinics, check-ups, plastic surgery, and more.",
+    "keywords": "korea, medical tourism, plastic surgery, health check-up"
   },
   "LocaleSwitcher": {
     "label": "Change Language",

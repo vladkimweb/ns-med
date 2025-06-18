@@ -1,6 +1,6 @@
 import { notFound } from 'next/navigation';
 import { Locale, hasLocale, NextIntlClientProvider } from 'next-intl';
-import { getTranslations, setRequestLocale } from 'next-intl/server';
+import { setRequestLocale } from 'next-intl/server'; //getTranslations,
 import { ReactNode } from 'react';
 import { Inter, Days_One, Merriweather } from 'next/font/google'
 import { routing } from '@/i18n/routing';
@@ -39,12 +39,31 @@ export function generateStaticParams() {
 
 export async function generateMetadata(props: Omit<Props, 'children'>) {
   const { locale } = await props.params;
+  // const t = await getTranslations({ locale, namespace: 'LocaleLayout' });
 
-  const t = await getTranslations({ locale, namespace: 'LocaleLayout' });
+  if (locale !== 'ru') return {};
 
   return {
-    title: t('title')
-  };
+    title: 'Медицинский туризм в Корее | NS Medical',
+    description: 'Лучшие клиники, обследования, пластическая хирургия и многое другое.',
+    keywords: ['Корея', 'медицинский туризм', 'пластическая хирургия', 'чекап'],
+    openGraph: {
+      title: 'Медицинский туризм в Корее | NS Medical',
+      description: 'Лучшие клиники, обследования, пластическая хирургия и многое другое.',
+      locale: 'ru',
+      type: 'website',
+      siteName: 'NS Medical',
+      url: 'https://med.ns-grp.com/ru',
+      images: [
+        {
+          url: 'https://med.ns-grp.com/og.png',
+          width: 1200,
+          height: 630,
+          alt: 'Медицинский туризм в Корее | NS Medical'
+        }
+      ]
+    }
+  }
 }
 
 export default async function LocaleLayout({ children, params }: Props) {
