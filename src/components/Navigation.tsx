@@ -5,7 +5,6 @@ import LocaleSwitcher from './LocaleSwitcher';
 import NavigationLink from './NavigationLink';
 import { useState, useEffect } from 'react';
 import Image from 'next/image'
-import Button from './Button'
 
 export default function Navigation() {
   const t = useTranslations('Navigation');
