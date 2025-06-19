@@ -42,7 +42,7 @@ export default function Navigation() {
             <NavigationLink href="/contacts">{t('contacts')}</NavigationLink>
             <LocaleSwitcher />
           </div>
-          <NavigationLink className="border-2 border-primary text-primary py-3 px-6 rounded-2xl" href="/contacts">{t('call')}</NavigationLink>
+          <a className="border-2 border-primary text-primary py-3 px-6 rounded-2xl" href="tel:+79119460707">{t('call')}</a>
 
 
         </div>

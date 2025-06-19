@@ -18,7 +18,7 @@ h1,h2 {
   font-family: var(--font-days-one);
 }
 h2{
-  margin-bottom: 4rem;
+  margin-bottom: 3rem;
 }
 
 section {
@@ -33,3 +33,12 @@ section {
   }
 }
  
+@keyframes scroll {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+.animate-\[scroll_30s_linear_infinite\] {
+  animation: scroll 30s linear infinite;
+  width: max-content;
+}

@@ -6,7 +6,7 @@ import Card from '@/components/Card';
 import { Hospital } from 'lucide-react';
 import ContactForm from '@/components/ContactForm';
 import { Hero } from '@/components/Hero';
-
+import { PartnersSection } from '@/components/PartnersSection'
 
 type Props = {
   params: Promise<{ locale: Locale }>;
@@ -90,6 +90,7 @@ export default function IndexPage({ params }: Props) {
         </section>
 
         <ContactForm />
+        <PartnersSection />
 
       </main>
     </>
