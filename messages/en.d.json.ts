@@ -158,6 +158,46 @@ declare const messages: {
     "view_title": "View Plastic Surgery",
     "view_description": "The View Hospital is proud to house a distinguished plastic surgery team consisting of some of the most accomplished plastic surgeons in Korea.",
     "view_all_partners": "View all partners"
+  },
+  "About": {
+    "title": "About Us",
+    "whoWeAre": {
+      "title": "Who We Are",
+      "p1": "NS Med Travel is a department of NS Group that provides full support for medical tourism in South Korea.",
+      "p2": "We make treatment in Korea comfortable, safe, and accessible. We work with trusted clinics and support our clients at every step."
+    },
+    "history": {
+      "title": "Our Story",
+      "p1": "NS Med Travel was born from the desire to help people who not only want to be treated, but also want care and support.",
+      "p2": "We’ve walked this path ourselves — searching for doctors, evaluating clinics, and building relationships. Now we share this experience with you."
+    },
+    "services": {
+      "title": "What We Offer",
+      "items": [
+        "Selection of clinic and doctor",
+        "Translation of documents and online consultations",
+        "Visa, tickets, and hotel arrangements",
+        "Airport pickup and transfers",
+        "Personal assistant and interpreter",
+        "Full treatment coordination"
+      ],
+      "note": "You focus on treatment — we handle everything else."
+    },
+    "workflow": {
+      "title": "How We Work",
+      "p1": "Just tell us about your case. We’ll find a clinic, discuss the details with doctors, and send you a plan and cost estimate.",
+      "p2": "Your journey — from the first call to final check-up — is guided by personal support."
+    },
+    "team": {
+      "title": "Who We Are",
+      "p1": "NS Med Travel is staffed by interpreters, coordinators, and medical consultants with experience in healthcare, logistics, and international support.",
+      "p2": "We are available 24/7, understand the importance of trust, and treat you like family."
+    },
+    "cta": {
+      "title": "Ready to Start?",
+      "description": "Contact us and we’ll help you find the treatment that’s right for you.",
+      "button": "Contact Us"
+    }
   }
 };
 export default messages;
