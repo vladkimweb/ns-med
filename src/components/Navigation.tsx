@@ -30,7 +30,7 @@ export default function Navigation() {
               alt="Logo NS Group"
             // className='mr-23'
             />
-            <NavigationLink href="/"><h3 className="text-2xl font-semibold text-gray-900 ">
+            <NavigationLink href="/"><h3 className="text-2xl font-semibold text-gray-800 ">
               {t('name')}
             </h3></NavigationLink>
           </span>
@@ -50,7 +50,9 @@ export default function Navigation() {
         {/* Мобильное меню */}
         <div className="md:hidden">
           <div className="flex justify-between items-center px-4 py-3">
-            <h3 className="text-lg font-semibold text-green-600">{t('name')}</h3>
+            <NavigationLink href="/">
+              <h3 className="text-lg font-semibold text-gray-800">{t('name')}</h3>
+            </NavigationLink>
             <div className="flex items-center gap-4">
               <LocaleSwitcher />
               <button
