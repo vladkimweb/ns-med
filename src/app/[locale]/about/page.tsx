@@ -27,16 +27,16 @@ export default function About({ params }: Props) {
         {/* Заголовок с акцентом */}
         <div className="max-w-4xl mx-auto text-center mb-16">
           <h1 className="text-4xl md:text-5xl font-bold mb-6 relative inline-block">
-            <span className="relative z-10">{t('title')}</span>
-            <span className="absolute bottom-0 left-0 w-full h-3 bg-blue-100 z-0 opacity-50"></span>
+            <span className="relative z-10 text-primary">{t('title')}</span>
+            {/* <span className="absolute bottom-0 left-0 w-full h-3 bg-blue-100 z-0 opacity-50"></span> */}
           </h1>
-          <div className="w-24 h-1 bg-gradient-to-r from-blue-500 to-teal-400 mx-auto mb-8"></div>
+          <div className="w-24 h-1 bg-gradient-to-r bg-primary mx-auto mb-8"></div>
         </div>
 
         {/* Сетка разделов */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 max-w-6xl mx-auto">
           {/* Кто мы */}
-          <div className="bg-white p-8 rounded-2xl shadow-xl hover:shadow-2xl transition-shadow duration-300 border-l-4 border-blue-500">
+          <div className="bg-white p-8 rounded-2xl shadow-xl hover:shadow-2xl transition-shadow duration-300 border-l-4 border-primary">
             <div className="flex items-start mb-6">
               <div className="bg-blue-100 p-3 rounded-lg mr-4">
                 <Users className="w-6 h-6 text-blue-600" />
@@ -66,7 +66,7 @@ export default function About({ params }: Props) {
           {/* Что мы предлагаем */}
           <div className="lg:col-span-2 bg-gradient-to-r from-blue-50 to-teal-50 p-8 rounded-2xl shadow-xl">
             <div className="flex items-start mb-6">
-              <div className="bg-blue-500 p-3 rounded-lg mr-4">
+              <div className="bg-primary p-3 rounded-lg mr-4">
                 <CheckCircle className="w-6 h-6 text-white" />
               </div>
               <h2 className="text-2xl font-bold text-gray-800">{t('services.title')}</h2>
@@ -75,7 +75,7 @@ export default function About({ params }: Props) {
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
               {[0, 1, 2, 3, 4, 5].map((i) => (
                 <div key={i} className="flex items-start">
-                  <Check className="w-5 h-5 text-teal-500 mt-0.5 mr-2 flex-shrink-0" />
+                  <Check className="w-5 h-5 text-blue-600 mt-0.5 mr-2 flex-shrink-0" />
                   <p className="text-gray-600">{t(`services.items.${i}`)}</p>
                 </div>
               ))}
