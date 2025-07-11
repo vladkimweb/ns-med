@@ -76,7 +76,7 @@ export default function IndexPage({ params }: Props) {
 
           </div>
         </section>
-
+        <PartnersSection />
 
         {/* Как получить лечение */}
         <section>
@@ -90,7 +90,7 @@ export default function IndexPage({ params }: Props) {
         </section>
 
         <ContactForm />
-        <PartnersSection />
+
 
       </main>
     </>

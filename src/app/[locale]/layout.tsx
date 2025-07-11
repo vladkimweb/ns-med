@@ -78,10 +78,10 @@ export default async function LocaleLayout({ children, params }: Props) {
 
   return (
     <html className={`${inter.variable} ${days_one.variable} ${merriweather.variable} bg-background`} lang={locale}>
+
       <body>
         <NextIntlClientProvider>
           <Navigation />
-
           {children}
           <Footer />
         </NextIntlClientProvider>

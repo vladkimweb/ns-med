@@ -37,7 +37,7 @@ export default function Navigation() {
 
           <div className="flex flex-wrap items-center justify-center gap-6">
             {/* <NavigationLink href="/">{t('home')}</NavigationLink> */}
-            <NavigationLink href="/services">{t('services')}</NavigationLink>
+            {/* <NavigationLink href="/services">{t('services')}</NavigationLink> */}
             <NavigationLink href="/about">{t('about')}</NavigationLink>
             <NavigationLink href="/contacts">{t('contacts')}</NavigationLink>
             <LocaleSwitcher />

@@ -133,16 +133,24 @@
     },
     "copyright": "© 2025 NS Med Travel. 모든 권리 보유",
     "privacyPolicy": "개인정보 처리방침",
-    "powerby": "Power by Vlad Kim",
-    "Partners": {
-      "title": "파트너",
-      "subtitle": "전 세계 주요 의료 기관과 협력하고 있습니다.",
-      "id_title": "아이디병원 (ID 병원)",
-      "id_description": "한국 최고의 성형외과 병원, 아시아 No.1 아이디병원입니다.",
-      "view_title": "뷰 성형외과",
-      "view_description": "뷰 병원은 한국 최고의 성형외과 전문의들로 구성된 뛰어난 의료진을 자랑합니다.",
-      "view_all_partners": "모든 파트너 보기"
-    }
+    "powerby": "Power by Vlad Kim"
+  },
+  "Partners": {
+    "title": "파트너",
+    "subtitle": "전 세계 주요 의료 기관과 협력하고 있습니다.",
+    "id_title": "아이디병원 (ID 병원)",
+    "id_description": "한국 최고의 성형외과 병원, 아시아 No.1 아이디병원입니다.",
+    "view_title": "뷰 성형외과",
+    "view_description": "뷰 병원은 한국 최고의 성형외과 전문의들로 구성된 뛰어난 의료진을 자랑합니다.",
+    "view_all_partners": "모든 파트너 보기",
+    "incheon_sejong_title": "인천 세종병원 – 국제진료센터",
+    "incheon_sejong_description": "정밀한 건강검진, 감염관리, 격리 구역, 양·음압 시스템, 높은 수준의 보안 시스템.",
+    "gachon_gil_title": "가천대학교 길병원",
+    "gachon_gil_description": "선도적인 종양센터, 신경외과, 장기이식 전문.",
+    "live_dental_title": "라이브치과병원",
+    "live_dental_description": "임플란트, 치아교정, 심미보철, 미백, 충치치료, 발치. 연간 3,000명 이상의 외국인 환자. 영어, 중국어, 러시아어 통역 지원.",
+    "vance_clinic_title": "밴스클리닉 (남동구)",
+    "vance_clinic_description": "윤곽주사, 보톡스, 필러, 지방분해주사, 스킨부스터, 피부관리. 마케팅보다 결과를 중시하는 과학적 접근으로 유명. 비수술적 얼굴 윤곽, 코·턱 교정으로 인기."
   },
   "About": {
     "title": "회사 소개",

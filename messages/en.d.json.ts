@@ -157,7 +157,15 @@ declare const messages: {
     "id_description": "Korea's leading plastic surgery hospital, ID Hospital is the No.1 Plastic surgery in Asia.",
     "view_title": "View Plastic Surgery",
     "view_description": "The View Hospital is proud to house a distinguished plastic surgery team consisting of some of the most accomplished plastic surgeons in Korea.",
-    "view_all_partners": "View all partners"
+    "view_all_partners": "View all partners",
+    "incheon_sejong_title": "Incheon Sejong Hospital – International Healthcare Center",
+    "incheon_sejong_description": "Thorough screening, infection control, isolation zones, positive/negative pressure system, and high-level security.",
+    "gachon_gil_title": "Gachon University Gil Medical Center",
+    "gachon_gil_description": "Leading oncology center, neurosurgery, and transplantology.",
+    "live_dental_title": "Live Dental Hospital",
+    "live_dental_description": "Implants, orthodontics, aesthetic crowns, whitening, caries treatment, extractions. 3,000+ international patients annually. Multilingual interpreters.",
+    "vance_clinic_title": "Vance Clinic (Namdong-gu)",
+    "vance_clinic_description": "Contouring, botox, fillers, lipolytics, skin boosters, skincare. Known for scientific approach and results-focused protocols. Popular for non-surgical jawline, nose, and chin correction."
   },
   "About": {
     "title": "About Us",

@@ -3,6 +3,7 @@ import { setRequestLocale } from 'next-intl/server';
 import { use } from 'react';
 import PageLayout from '@/components/PageLayout';
 
+
 type Props = {
   params: Promise<{ locale: Locale }>;
 };
@@ -16,6 +17,7 @@ export default function PathnamesPage({ params }: Props) {
   const t = useTranslations('PathnamesPage');
 
   return (
+
     <PageLayout title={t('title')}>
       <div className="max-w-[490px]">
 
