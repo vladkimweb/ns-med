@@ -1,4 +1,4 @@
-import { Locale, useTranslations } from 'next-intl';
+import { Locale } from 'next-intl';
 import { setRequestLocale } from 'next-intl/server';
 import { use } from 'react';
 import ContactForm from '@/components/ContactForm';

@@ -1,12 +1,26 @@
 import Image from 'next/image';
 import { useTranslations } from 'next-intl';
 
+type PartnerKeys =
+  | 'id_title'
+  | 'id_description'
+  | 'view_title'
+  | 'view_description'
+  | 'incheon_sejong_title'
+  | 'incheon_sejong_description'
+  | 'gachon_gil_title'
+  | 'gachon_gil_description'
+  | 'live_dental_title'
+  | 'live_dental_description'
+  | 'vance_clinic_title'
+  | 'vance_clinic_description';
+
 interface Partner {
   id: string;
   imageSrc: string;
   imageAlt: string;
-  titleKey: string;
-  descriptionKey: string;
+  titleKey: PartnerKeys;
+  descriptionKey: PartnerKeys;
 }
 
 export function PartnersSection() {
@@ -57,6 +71,8 @@ export function PartnersSection() {
       descriptionKey: 'vance_clinic_description'
     }
     // Добавляйте новых партнеров здесь:
+    // 1. Добавьте новые ключи в тип PartnerKeys выше
+    // 2. Добавьте объект партнера:
     // {
     //   id: 'new_partner',
     //   imageSrc: '/partners/new-partner.jpg',
@@ -93,10 +109,10 @@ export function PartnersSection() {
                 />
               </div>
               <h3 className="text-xl font-semibold mb-3">
-                {t(partner.titleKey as any)}
+                {t(partner.titleKey)}
               </h3>
               <p className="text-gray-600">
-                {t(partner.descriptionKey as any)}
+                {t(partner.descriptionKey)}
               </p>
             </div>
           ))}
