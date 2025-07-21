@@ -6,8 +6,21 @@ export function Hero() {
   const t = useTranslations('IndexPage');
   return (
     <div className="relative w-full min-h-[calc(100vh-64px)] grid place-items-center">
+      {/* Видеофон */}
+      <video
+        autoPlay
+        loop
+        muted
+        playsInline
+        className="absolute top-0 left-0 w-full h-full object-cover"
+      >
+        <source src="/hero-video.webm" type="video/webm" />
+        Ваш браузер не поддерживает видео.
+      </video>
+      {/* Затемнение поверх видео (по желанию) */}
+      <div className="absolute inset-0 bg-black/40 z-10"></div>
       {/* Фоновое изображение */}
-      <div className="absolute inset-0">
+      {/* <div className="absolute inset-0">
         <Image
           src="/hero.jpg" // Укажите правильный путь к изображению
           alt="Медицинский туризм"
@@ -15,7 +28,7 @@ export function Hero() {
           className="object-cover object-center"
         />
         <div className="absolute inset-0 bg-black/20" />
-      </div>
+      </div> */}
 
       {/* Контент поверх изображения */}
       <div className="top-[64px] relative z-10 container mx-auto h-full grid grid-cols-1 items-center">
