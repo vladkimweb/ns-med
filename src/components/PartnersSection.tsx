@@ -86,7 +86,7 @@ export function PartnersSection() {
     <section>
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
-          <h2 className="text-center text-3xl md:text-4xl uppercase font-bold text-primary">
+          <h2 className="text-center text-3xl md:text-4xl uppercase font-bold text-primary mb-5">
             {t('title')}
           </h2>
           <p className="text-gray-600 max-w-2xl mx-auto">

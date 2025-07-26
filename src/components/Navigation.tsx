@@ -17,12 +17,11 @@ export default function Navigation() {
   }, []);
 
   return (
-    <header className="z-20 top-0 left-0 w-full bg-background shadow-sm">
+    <header className="z-20 top-0 left-0 w-full bg-background">
       <nav>
         {/* Десктопное меню */}
-        <div className="hidden md:flex  justify-between py-2 container mx-auto">
-          <span className='flex flex-wrap items-center gap-2'>
-
+        <div className="hidden md:flex justify-between py-2 container mx-auto px-4">
+          <span className='flex items-center gap-2'>
             <Image
               src="/logo.png"
               width={50}
@@ -34,17 +33,15 @@ export default function Navigation() {
               {t('name')}
             </h3></NavigationLink>
           </span>
-
-          <div className="flex flex-wrap items-center justify-center gap-6">
+          <div className="flex items-center justify-center gap-20">
             {/* <NavigationLink href="/">{t('home')}</NavigationLink> */}
             {/* <NavigationLink href="/services">{t('services')}</NavigationLink> */}
             <NavigationLink href="/about">{t('about')}</NavigationLink>
+            <NavigationLink href="/blog">{t('blog')}</NavigationLink>
             <NavigationLink href="/contacts">{t('contacts')}</NavigationLink>
             <LocaleSwitcher />
           </div>
           <a className="border-2 border-primary text-primary py-3 px-6 rounded-2xl" href="tel:+79119460707">{t('call')}</a>
-
-
         </div>
 
         {/* Мобильное меню */}

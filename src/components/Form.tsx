@@ -20,10 +20,8 @@ export function Form({ onSuccess }: { onSuccess?: () => void }) {
     if (state.succeeded && onSuccess) {
       router.push('/thanks');
     }
-  }, [state.succeeded, router]);
-  // if (state.succeeded && onSuccess) {
-  //   onSuccess() // Закрываем модалку после успешной отправки
-  // }
+  }, [state.succeeded, router, onSuccess]);
+
 
   return (
     <>

@@ -17,9 +17,6 @@ html {
 h1,h2 {
   font-family: var(--font-days-one);
 }
-h2{
-  margin-bottom: 3rem;
-}
 
 section {
   margin-bottom: 180px;

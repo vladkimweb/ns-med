@@ -86,6 +86,7 @@ declare const messages: {
   "Navigation": {
     "name": "NS Med Travel",
     "home": "Home",
+    "blog": "Blog",
     "about": "About Us",
     "contacts": "Contacts",
     "services": "Services",
