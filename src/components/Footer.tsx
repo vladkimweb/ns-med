@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { Phone, Mail, MapPin } from 'lucide-react';
+import { Mail, MapPin } from 'lucide-react';
 import { FaWhatsapp } from "react-icons/fa";
 import { useTranslations } from 'next-intl';
 
