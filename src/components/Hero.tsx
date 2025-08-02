@@ -4,7 +4,7 @@ import { ModalForm } from './ModalForm';
 export function Hero() {
   const t = useTranslations('IndexPage');
   return (
-    <div className="relative w-full min-h-[calc(100vh-64px)] grid place-items-center">
+    <div className="relative w-full min-h-[calc(100vh-140px)] grid place-items-center">
       {/* Видеофон */}
       <video
         autoPlay
@@ -30,7 +30,7 @@ export function Hero() {
       </div> */}
 
       {/* Контент поверх изображения */}
-      <div className="top-[64px] relative z-10 container mx-auto h-full grid grid-cols-1 items-center">
+      <div className="top-[30px] relative z-10 container mx-auto h-full grid grid-cols-1 items-center">
         {/* Пустой блок слева (1/3) */}
         {/* <div className="lg:col-span-1"></div> */}
 

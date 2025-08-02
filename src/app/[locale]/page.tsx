@@ -2,11 +2,11 @@ import { Locale, useTranslations } from 'next-intl';
 import { setRequestLocale } from 'next-intl/server';
 import { use } from 'react';
 import Step from '@/components/Step';
-import Card from '@/components/Card';
-import { Hospital } from 'lucide-react';
+
+import DirectionsSection from '@/components/DirectionsSection';
 import ContactForm from '@/components/ContactForm';
 import { Hero } from '@/components/Hero';
-import { PartnersSection } from '@/components/PartnersSection'
+import PartnersSection from '@/components/PartnersSection'
 
 type Props = {
   params: Promise<{ locale: Locale }>;
@@ -25,57 +25,7 @@ export default function IndexPage({ params }: Props) {
       <main className='relative container mx-auto px-4 lg:px-0'>
 
         {/* Направления лечения */}
-        <section>
-          <h2 className="text-center text-3xl md:text-4xl uppercase font-bold text-primary">{t('section.departments')}</h2>
-          <div className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-            <Card
-              title={t('departments.plastic.title')}
-              description={t('departments.plastic.desc')}
-              icon={<Hospital />}
-            />
-            <Card
-              title={t('departments.dermatology.title')}
-              description={t('departments.dermatology.desc')}
-              icon={<Hospital />}
-            />
-            <Card
-              title={t('departments.dental.title')}
-              description={t('departments.dental.desc')}
-              icon={<Hospital />}
-            />
-            <Card
-              title={t('departments.internal.title')}
-              description={t('departments.internal.desc')}
-              icon={<Hospital />}
-            />
-            <Card
-              title={t('departments.ent.title')}
-              description={t('departments.ent.desc')}
-              icon={<Hospital />}
-            />
-            <Card
-              title={t('departments.obgyn.title')}
-              description={t('departments.obgyn.desc')}
-              icon={<Hospital />}
-            />
-            <Card
-              title={t('departments.checkup.title')}
-              description={t('departments.checkup.desc')}
-              icon={<Hospital />}
-            />
-            <Card
-              title={t('departments.ophthalmology.title')}
-              description={t('departments.ophthalmology.desc')}
-              icon={<Hospital />}
-            />
-            <Card
-              title={t('departments.oncology.title')}
-              description={t('departments.oncology.desc')}
-              icon={<Hospital />}
-            />
-
-          </div>
-        </section>
+        <DirectionsSection />
         <PartnersSection />
 
         {/* Как получить лечение */}

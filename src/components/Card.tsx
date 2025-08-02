@@ -12,7 +12,7 @@ export default function Card({ title, description, icon, className }: Props) {
   return (
     <div
       className={clsx(
-        'bg-white p-6 rounded-2xl shadow-md hover:shadow-lg transition-shadow duration-200',
+        'bg-white m-2 p-6 rounded-2xl shadow-md hover:shadow-lg transition-shadow duration-200',
         className
       )}
     >

@@ -1,9 +1,3 @@
-'use client';
-
-import { Swiper, SwiperSlide } from 'swiper/react';
-import 'swiper/css';
-import 'swiper/css/pagination';
-import { Pagination } from 'swiper/modules';
 import Image from 'next/image';
 import { useTranslations } from 'next-intl';
 
@@ -100,37 +94,29 @@ export default function PartnersSection() {
           </p>
         </div>
 
-        <Swiper
-          modules={[Pagination]}
-          spaceBetween={24}
-          slidesPerView={1}
-          pagination={{ clickable: true }}
-          breakpoints={{
-            768: { slidesPerView: 2 },
-            1024: { slidesPerView: 3 },
-          }}
-        >
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 container mx-auto">
           {partners.map((partner) => (
-            <SwiperSlide key={partner.id}>
-              <div className="bg-white p-6 rounded-2xl shadow-md hover:shadow-lg transition-shadow duration-200">
-                <div className="relative h-50 mb-6">
-                  <Image
-                    src={partner.imageSrc}
-                    alt={partner.imageAlt}
-                    fill
-                    className="object-center object-cover"
-                  />
-                </div>
-                <h3 className="text-xl font-semibold mb-3">
-                  {t(partner.titleKey)}
-                </h3>
-                <p className="text-gray-600">
-                  {t(partner.descriptionKey)}
-                </p>
+            <div
+              key={partner.id}
+              className="bg-white p-6 rounded-2xl shadow-md hover:shadow-lg transition-shadow duration-200"
+            >
+              <div className="relative h-50 mb-6">
+                <Image
+                  src={partner.imageSrc}
+                  alt={partner.imageAlt}
+                  fill
+                  className="object-center object-cover"
+                />
               </div>
-            </SwiperSlide>
+              <h3 className="text-xl font-semibold mb-3">
+                {t(partner.titleKey)}
+              </h3>
+              <p className="text-gray-600">
+                {t(partner.descriptionKey)}
+              </p>
+            </div>
           ))}
-        </Swiper>
+        </div>
 
         <div className="text-center mt-12">
           {/* <button className="text-primary font-medium hover:underline">

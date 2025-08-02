@@ -13,7 +13,7 @@ export function ModalForm() {
       {/* Кнопка открытия модалки */}
       <button
         onClick={() => setIsOpen(true)}
-        className="bg-background text-gray-800 hover:bg-blue-300 px-6 py-3 rounded-2xl font-medium transition-colors"
+        className="bg-primary text-gray-800 hover:bg-blue-300 px-6 py-3 rounded-2xl font-medium transition-colors"
       >
         {t('getConsultation')}
       </button>

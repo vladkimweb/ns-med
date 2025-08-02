@@ -9,63 +9,63 @@
     "title-how": "How to get treatment",
     "steps": {
       "step1": {
-        "title": "Send a request",
-        "desc": "Fill out the short form or contact us via messenger."
+        "title": "Submit Your Application",
+        "desc": "Start with an easy step—fill out a short form on our website or contact us via messengers (WhatsApp, KakaoTalk, Telegram). Specify your desired treatment area, preferred timeframe, and if possible, attach medical documents (images, test results, reports)."
       },
       "step2": {
         "title": "Consultation",
-        "desc": "We will recommend a hospital and estimate the cost."
+        "desc": "After receiving your application, we will contact you to clarify details and offer optimal clinic options. We will select a medical institution that matches your request, specialization, and budget. You will receive a preliminary treatment plan and estimated cost, including translation, accommodation, and support services."
       },
       "step3": {
         "title": "Trip to Korea",
-        "desc": "We will help organize your trip and accommodation."
+        "desc": "Our coordinators will assist with visa processing (if necessary), flight bookings, airport transfers, and accommodation at a hotel or guesthouse near the clinic. We will guide you on how to prepare for your trip and will be available throughout the process."
       },
       "step4": {
         "title": "Treatment",
-        "desc": "You will receive treatment at the chosen clinic."
+        "desc": "You will undergo treatment at a modern clinic using advanced technologies and under the supervision of experienced doctors. We will provide interpreter support, assistance with communication with staff, and support until the completion of the entire course. Upon completion of treatment, you will receive the necessary recommendations and documents for follow-up care with your doctor at home."
       }
     },
     "section": {
-      "hospitals": "Korean hospitals",
-      "departments": "Medical Departments"
+      "hospitals": "Korean hospitals"
+    }
+  },
+  "Directions": {
+    "departments": "Treatment Areas",
+    "dental": {
+      "title": "Dentistry",
+      "desc": "Implants, surgery, and whitening."
     },
-    "departments": {
-      "dental": {
-        "title": "Dentistry",
-        "desc": "Implants, surgery, and whitening."
-      },
-      "plastic": {
-        "title": "Plastic Surgery",
-        "desc": "Aesthetic and Reconstructive Procedures."
-      },
-      "dermatology": {
-        "title": "Dermatology",
-        "desc": "Diagnosis and treatment of skin, hair, and nail diseases."
-      },
-      "internal": {
-        "title": "Internal Medicine",
-        "desc": "Treatment of internal organ diseases, including hypertension and diabetes."
-      },
-      "ent": {
-        "title": "Otolaryngology (ENT)",
-        "desc": "Treatment of ear, nose, and throat conditions."
-      },
-      "obgyn": {
-        "title": "Obstetrics & Gynecology",
-        "desc": "Women's health, pregnancy care, and childbirth."
-      },
-      "checkup": {
-        "title": "Health Check-up",
-        "desc": "Full-body screening and diagnostics."
-      },
-      "ophthalmology": {
-        "title": "Ophthalmology",
-        "desc": "Vision correction, cataract, and eye disease treatment."
-      },
-      "oncology": {
-        "title": "Oncology",
-        "desc": "Cancer diagnosis and treatment using advanced technologies."
-      }
+    "plastic": {
+      "title": "Plastic Surgery",
+      "desc": "Aesthetic and Reconstructive Procedures."
+    },
+    "dermatology": {
+      "title": "Dermatology",
+      "desc": "Diagnosis and treatment of skin, hair, and nail diseases."
+    },
+    "internal": {
+      "title": "Internal Medicine",
+      "desc": "Treatment of internal organ diseases, including hypertension and diabetes."
+    },
+    "ent": {
+      "title": "Otolaryngology (ENT)",
+      "desc": "Treatment of ear, nose, and throat conditions."
+    },
+    "obgyn": {
+      "title": "Obstetrics & Gynecology",
+      "desc": "Women's health, pregnancy care, and childbirth."
+    },
+    "checkup": {
+      "title": "Health Check-up",
+      "desc": "Full-body screening and diagnostics."
+    },
+    "ophthalmology": {
+      "title": "Ophthalmology",
+      "desc": "Vision correction, cataract, and eye disease treatment."
+    },
+    "oncology": {
+      "title": "Oncology",
+      "desc": "Cancer diagnosis and treatment using advanced technologies."
     }
   },
   "LocaleLayout": {
