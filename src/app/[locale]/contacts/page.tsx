@@ -16,7 +16,7 @@ export default function ContactsPage() {
         <Office
           city="Санкт-Петербург"
           address="17-я линия В.О., д. 4–6, лит. Е, оф. Т-214"
-          phones={['+7 (961) 707-62-54']}
+          phones={['']}
         />
         <Office
           city="Москва"

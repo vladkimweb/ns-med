@@ -77,7 +77,7 @@ export function Footer() {
                 <div>
                   <p className="font-semibold">Санкт-Петербург:</p>
                   <p>17-я линия В.О., д. 4–6, лит. Е, оф. Т-214</p>
-                  <a href="tel:+79617076254" className="block">+7 (961) 707-62-54</a>
+                  {/* <a href="tel:+79617076254" className="block">+7 (961) 707-62-54</a> */}
                 </div>
               </div>
 
