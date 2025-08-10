@@ -9,7 +9,7 @@ export default function ContactsPage() {
     <main className="max-w-7xl mx-auto px-4 py-10 space-y-16">
       {/* Заголовок */}
       <section className="text-center">
-        <h1 className="text-4xl font-bold text-primary">Наши офисы</h1>
+        <h1 className="text-4xl font-bold text-primary uppercase">Наши офисы</h1>
         <p className="text-gray-600 mt-2">Свяжитесь с нами любым удобным способом</p>
       </section>
 
@@ -34,8 +34,8 @@ export default function ContactsPage() {
 
       {/* Карта */}
       <section>
-        <h2 className="text-2xl text-center font-semibold mb-4 text-primary">Мы на карте</h2>
-        {/* <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A4e6eb17fea5eea417c9c4fec49c4346f13a98d20caadbd2da740f0107fca0904&amp;width=485&amp;height=450&amp;lang=ru_RU&amp;scroll=true"></script> */}
+        <h2 className="text-2xl text-center font-semibold mb-4 text-primary uppercase">Мы на карте</h2>
+
         <div
           className="w-full max-w-3xl h-[450px] rounded-xl overflow-hidden shadow-md mx-auto"
           dangerouslySetInnerHTML={{
@@ -46,7 +46,7 @@ export default function ContactsPage() {
 
       {/* Соцсети */}
       <section className="text-center space-y-4">
-        <h2 className="text-2xl font-semibold text-primary">Мы в соцсетях</h2>
+        <h2 className="text-2xl font-semibold text-primary uppercase">Мы в соцсетях</h2>
         <div className="flex justify-center gap-6">
           <a href="https://t.me/your_channel" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-primary">Telegram</a>
           <a href="https://instagram.com/your_profile" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-primary">Instagram</a>
@@ -62,12 +62,12 @@ export default function ContactsPage() {
         </div>
       </section> */}
 
-      {/* Форма */}
+      {/* Форма 
       <section>
 
         <ContactForm />
       </section>
-
+*/}
 
     </main>
   )

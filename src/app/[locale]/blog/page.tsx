@@ -9,7 +9,7 @@ export default function BlogPage() {
     <main>
       {/* Заголовок страницы */}
       <div className="bg-gradient-to-r flex flex-col justify-center items-center from-blue-500 to-cyan-500 min-h-[350px]">
-        <h1 className="text-center text-4xl md:text-5xl text-white font-bold mb-6">
+        <h1 className="text-center text-4xl md:text-5xl text-white font-bold mb-6 uppercase">
           Блог
         </h1>
         <p className="text-center text-xl text-blue-100 mb-6 max-w-2xl px-4">

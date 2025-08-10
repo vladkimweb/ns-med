@@ -36,7 +36,7 @@ export default function About() {
     <main className="max-w-7xl mx-auto px-4 py-16 space-y-24">
       {/* Заголовок */}
       <section className="text-center">
-        <h1 className="text-5xl font-extrabold text-primary mb-4">О нас</h1>
+        <h1 className="text-4xl font-extrabold text-primary mb-4">О НАС</h1>
         <p className="text-gray-600 text-lg">
           Профессиональная медицинская координация и поддержка
         </p>
@@ -62,7 +62,7 @@ export default function About() {
 
       {/* Наши услуги */}
       <section>
-        <h2 className="text-3xl text-center font-bold mb-10 text-primary">
+        <h2 className="text-3xl text-center font-bold mb-10 text-primary uppercase">
           Наши услуги
         </h2>
         <div className="grid md:grid-cols-3 gap-8">
@@ -83,7 +83,7 @@ export default function About() {
 
       {/* Наша команда */}
       <section>
-        <h2 className="text-3xl text-center font-bold mb-6 text-primary">
+        <h2 className="text-3xl text-center font-bold mb-6 text-primary uppercase">
           Наша команда
         </h2>
         <p className="text-center text-gray-600 mb-10">
@@ -113,7 +113,7 @@ export default function About() {
 
       {/* Почему выбирают нас */}
       <section>
-        <h2 className="text-3xl text-center font-bold mb-10 text-primary">
+        <h2 className="text-3xl text-center font-bold mb-10 text-primary uppercase">
           Почему выбирают нас
         </h2>
         <div className="grid md:grid-cols-3 gap-8">
@@ -133,7 +133,7 @@ export default function About() {
       </section>
 
       {/* Статистика */}
-      <section className="bg-primary/5 p-10 rounded-xl shadow-md border">
+      <section className="bg-primary/5 p-10 rounded-xl shadow-md border uppercase">
         <h2 className="text-3xl text-center font-bold mb-10 text-primary">
           Наши достижения
         </h2>
