@@ -1,6 +1,4 @@
-// import Image from 'next/image'
-// import dynamic from 'next/dynamic'
-import ContactForm from '@/components/ContactForm'
+
 import { MapPin, Phone } from 'lucide-react'
 
 
