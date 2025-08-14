@@ -4,9 +4,9 @@ import { setRequestLocale } from 'next-intl/server'; //getTranslations,
 import { ReactNode } from 'react';
 import { Inter, Days_One, Merriweather } from 'next/font/google'
 import { routing } from '@/i18n/routing';
-import Navigation from '@/components/Navigation';
+import Navigation from '@/components/layout/Navigation';
 import './styles.css';
-import { Footer } from '@/components/Footer'
+import { Footer } from '@/components/layout/Footer'
 
 type Props = {
   children: ReactNode;

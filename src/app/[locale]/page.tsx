@@ -1,46 +1,53 @@
-import { Locale, useTranslations } from 'next-intl';
+import { Locale } from 'next-intl';
 import { setRequestLocale } from 'next-intl/server';
-import { use } from 'react';
-import Step from '@/components/Step';
-
-import DirectionsSection from '@/components/DirectionsSection';
-import ContactForm from '@/components/ContactForm';
-import { Hero } from '@/components/Hero';
-import PartnersSection from '@/components/PartnersSection'
+import Step from '@/components/ui/Step';
+import ContactForm from '@/components/forms/ContactForm';
+import { Hero } from '@/components/layout/Hero';
+import DirectionsSectionWrapper from '@/components/sections/DirectionsSectionWrapper';
+import PartnersSectionWrapper from '@/components/sections/PartnersSectionWrapper';
 
 type Props = {
-  params: Promise<{ locale: Locale }>;
+  params: { locale: Locale };
 };
 
-export default function IndexPage({ params }: Props) {
-  const { locale } = use(params);
+export default async function IndexPage({ params }: Props) {
+  const { locale } = await params; // await перед деструктуризацией
+
+  // Устанавливаем локаль на сервере
   setRequestLocale(locale);
 
-  const t = useTranslations('IndexPage');
+  // Импортируем переводы напрямую
+  const messages = (await import(`../../../messages/${locale}.json`)).default;
+  const t = messages.IndexPage;
 
   return (
     <>
+      {/* Hero */}
+      <Hero className="mb-24" />
 
-      <Hero />
-      <main className='relative container mx-auto px-4 lg:px-0'>
+      <main className="relative container mx-auto px-4 lg:px-0 flex flex-col">
 
         {/* Направления лечения */}
-        <DirectionsSection />
-        <PartnersSection />
+        <DirectionsSectionWrapper locale={locale} className="mb-24" />
+
+        {/* Партнёры */}
+        <PartnersSectionWrapper locale={locale} className="mb-24" />
 
         {/* Как получить лечение */}
-        <section>
-          <h2 className="text-center text-3xl md:text-4xl  uppercase font-bold text-primary">{t('title-how')}</h2>
-          <div className="mt-10">
-            <Step number={1} title={t('steps.step1.title')} description={t('steps.step1.desc')} />
-            <Step number={2} title={t('steps.step2.title')} description={t('steps.step2.desc')} />
-            <Step number={3} title={t('steps.step3.title')} description={t('steps.step3.desc')} />
-            <Step number={4} title={t('steps.step4.title')} description={t('steps.step4.desc')} />
+        <section className="mb-24">
+          <h2 className="text-center text-3xl md:text-4xl uppercase font-bold text-primary mb-10">
+            {t['title-how']}
+          </h2>
+          <div className="flex flex-col space-y-8">
+            <Step number={1} title={t['steps']['step1']['title']} description={t['steps']['step1']['desc']} />
+            <Step number={2} title={t['steps']['step2']['title']} description={t['steps']['step2']['desc']} />
+            <Step number={3} title={t['steps']['step3']['title']} description={t['steps']['step3']['desc']} />
+            <Step number={4} title={t['steps']['step4']['title']} description={t['steps']['step4']['desc']} />
           </div>
         </section>
 
-        <ContactForm />
-
+        {/* Форма контакта */}
+        <ContactForm className="mb-24" />
 
       </main>
     </>

@@ -2,7 +2,11 @@
 import { useTranslations } from 'next-intl';
 import { useForm, ValidationError } from '@formspree/react';
 
-export default function ContactForm() {
+type SectionProps = {
+  className?: string;
+};
+
+export default function ContactForm({ className }: SectionProps) {
   const t = useTranslations('ContactForm');
   const [state, handleSubmit] = useForm("xrbkknjl");
   if (state.succeeded) {
@@ -19,7 +23,7 @@ export default function ContactForm() {
   // }, [state.succeeded, router]);
 
   return (
-    <section className="bg-white">
+    <section className={`bg-white ${className ?? ''}`}>
       <div className="max-w-4xl mx-auto">
         {/* Заголовок */}
         <h2 className="text-3xl md:text-4xl font-bold text-center text-primary uppercase tracking-wide mb-12">

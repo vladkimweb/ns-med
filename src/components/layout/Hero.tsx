@@ -1,10 +1,14 @@
 import { useTranslations } from 'next-intl';
-import { ModalForm } from './ModalForm';
+import { ModalForm } from '@/components/forms/ModalForm';
 
-export function Hero() {
+type HeroProps = {
+  className?: string;
+};
+
+export function Hero({ className }: HeroProps) {
   const t = useTranslations('IndexPage');
   return (
-    <div className="relative w-full min-h-[calc(100vh-140px)] grid place-items-center">
+    <div className={`relative w-full min-h-[calc(100vh-120px)]  grid place-items-center ${className ?? ''}`}>
       {/* Видеофон */}
       <video
         autoPlay

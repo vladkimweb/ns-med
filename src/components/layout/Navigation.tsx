@@ -1,7 +1,7 @@
 "use client";
 
 import { useTranslations } from 'next-intl';
-import LocaleSwitcher from './LocaleSwitcher';
+import LocaleSwitcher from '../LocaleSwitcher';
 import NavigationLink from './NavigationLink';
 import { useState, useEffect } from 'react';
 import Image from 'next/image'
@@ -19,7 +19,7 @@ export default function Navigation() {
   return (
     <header className="z-20 top-0 left-0 w-full bg-gray-100">
       {/* Верхняя строка с телефоном и языком */}
-      <div className="hidden md:flex items-center justify-between text-sm text-gray-700 py-2 mx-auto px-4 container">
+      <div className="hidden md:flex items-center justify-between text-sm text-gray-700 py-1 mx-auto px-4 container">
         <div className="flex flex-wrap items-center gap-x-6 gap-y-1">
           <span>📍 СПб: 17-я линия В.О., д. 4–6, лит. Е, оф. Т-214</span>
           <span>📞 СПб: <a href="tel:+79617076254" className="hover:underline">+7 (961) 707-62-54</a></span>
