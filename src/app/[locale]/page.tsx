@@ -6,12 +6,14 @@ import { Hero } from '@/components/layout/Hero';
 import DirectionsSectionWrapper from '@/components/sections/DirectionsSectionWrapper';
 import PartnersSectionWrapper from '@/components/sections/PartnersSectionWrapper';
 
+// Define Props with params as a Promise
 type Props = {
-  params: { locale: Locale };
+  params: Promise<{ locale: Locale }>;
 };
 
 export default async function IndexPage({ params }: Props) {
-  const { locale } = params;
+  // Await the params to resolve the Promise
+  const { locale } = await params;
 
   // Устанавливаем локаль на сервере
   setRequestLocale(locale);
