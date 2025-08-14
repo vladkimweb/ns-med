@@ -11,7 +11,7 @@ type Props = {
 };
 
 export default async function IndexPage({ params }: Props) {
-  const { locale } = params; // await перед деструктуризацией
+  const { locale } = params;
 
   // Устанавливаем локаль на сервере
   setRequestLocale(locale);
@@ -22,18 +22,12 @@ export default async function IndexPage({ params }: Props) {
 
   return (
     <>
-      {/* Hero */}
       <Hero className="mb-24" />
 
       <main className="relative container mx-auto px-4 lg:px-0 flex flex-col">
-
-        {/* Направления лечения */}
         <DirectionsSectionWrapper locale={locale} className="mb-24" />
-
-        {/* Партнёры */}
         <PartnersSectionWrapper locale={locale} className="mb-24" />
 
-        {/* Как получить лечение */}
         <section className="mb-24">
           <h2 className="text-center text-3xl md:text-4xl uppercase font-bold text-primary mb-10">
             {t['title-how']}
@@ -46,9 +40,7 @@ export default async function IndexPage({ params }: Props) {
           </div>
         </section>
 
-        {/* Форма контакта */}
         <ContactForm className="mb-24" />
-
       </main>
     </>
   );
