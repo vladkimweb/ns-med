@@ -11,7 +11,7 @@ type Props = {
 };
 
 export default async function IndexPage({ params }: Props) {
-  const { locale } = await params; // await перед деструктуризацией
+  const { locale } = params; // await перед деструктуризацией
 
   // Устанавливаем локаль на сервере
   setRequestLocale(locale);
