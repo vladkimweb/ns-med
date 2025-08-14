@@ -24,11 +24,12 @@ interface Partner {
 }
 
 type Props = {
-  t: any;
+  t: (key: string, options?: object) => string;
   className?: string;
 };
 
 export default function PartnersSectionClient({ t, className }: Props) {
+
   const partners: Partner[] = [
     {
       id: 'id',
@@ -79,9 +80,9 @@ export default function PartnersSectionClient({ t, className }: Props) {
 
       <div className="text-center mb-10">
         <h2 className="text-3xl md:text-4xl uppercase font-bold text-primary mb-5">
-          {t['title']}
+          {t('title')}
         </h2>
-        <p className="text-gray-600 max-w-2xl mx-auto">{t['subtitle']}</p>
+        <p className="text-gray-600 max-w-2xl mx-auto">{t('subtitle')}</p>
       </div>
 
       <Swiper
@@ -105,8 +106,8 @@ export default function PartnersSectionClient({ t, className }: Props) {
                   className="object-center object-cover"
                 />
               </div>
-              <h3 className="text-xl font-semibold mb-3">{t[partner.titleKey]}</h3>
-              <p className="text-gray-600">{t[partner.descriptionKey]}</p>
+              <h3 className="text-xl font-semibold mb-3">{t(partner.titleKey)}</h3>
+              <p className="text-gray-600">{t(partner.descriptionKey)}</p>
             </div>
           </SwiperSlide>
         ))}
