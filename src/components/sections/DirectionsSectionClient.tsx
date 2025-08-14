@@ -1,4 +1,3 @@
-// DirectionsSectionClient.tsx
 'use client';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
@@ -7,23 +6,33 @@ import { Navigation } from 'swiper/modules';
 import Card from '@/components/ui/Card';
 import { Hospital } from 'lucide-react';
 
+type Direction = {
+  title: string;
+  desc: string;
+};
+
+const directionsKeys = [
+  'plastic', 'dermatology', 'dental', 'internal',
+  'ent', 'obgyn', 'checkup', 'ophthalmology', 'oncology'
+] as const;
+
+type DirectionsKeys = typeof directionsKeys[number];
+
+type DirectionsTranslations = {
+  departments: string;
+} & Record<DirectionsKeys, Direction>;
+
 type Props = {
-  t: any; // Можно потом типизировать
+  t: DirectionsTranslations;
   className?: string;
 };
 
 export default function DirectionsSectionClient({ t, className }: Props) {
-  const slides = [
-    'plastic', 'dermatology', 'dental', 'internal',
-    'ent', 'obgyn', 'checkup', 'ophthalmology', 'oncology'
-  ];
-
   return (
     <section className={className}>
       <h2 className="text-center text-3xl md:text-4xl uppercase font-bold text-primary mb-10">
-        {t['departments']}
+        {t.departments}
       </h2>
-
 
       <Swiper
         modules={[Navigation]}
@@ -35,17 +44,16 @@ export default function DirectionsSectionClient({ t, className }: Props) {
           1024: { slidesPerView: 3 },
         }}
       >
-        {slides.map((key) => (
+        {directionsKeys.map((key) => (
           <SwiperSlide key={key}>
             <Card
-              title={t[key]['title']}
-              description={t[key]['desc']}
+              title={t[key].title}
+              description={t[key].desc}
               icon={<Hospital />}
             />
           </SwiperSlide>
         ))}
       </Swiper>
-
     </section>
   );
 }
