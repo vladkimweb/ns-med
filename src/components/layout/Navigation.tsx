@@ -19,7 +19,7 @@ export default function Navigation() {
   return (
     <header className="z-20 top-0 left-0 w-full bg-gray-100">
       {/* Верхняя строка с телефоном и языком */}
-      <div className="hidden md:flex items-center justify-between text-sm text-gray-700 py-1 mx-auto px-4 container">
+      <div className="hidden md:flex items-center justify-between text-sm text-gray-700 py-2 mx-auto max-w-7xl px-4">
         <div className="flex flex-wrap items-center gap-x-6 gap-y-1">
           <span>📍 СПб: 17-я линия В.О., д. 4–6, лит. Е, оф. Т-214</span>
           <span>📞 СПб: <a href="tel:+79617076254" className="hover:underline">+7 (961) 707-62-54</a></span>
@@ -29,11 +29,11 @@ export default function Navigation() {
             <a href="tel:+79201865099" className="hover:underline ml-1">+7 (920) 186-50-99</a>
           </span>
         </div>
-        <LocaleSwitcher />
+        {/* <LocaleSwitcher /> */}
       </div>
       <nav className='bg-white'>
         {/* Десктопное меню */}
-        <div className="hidden md:flex justify-between py-3 container mx-auto px-4">
+        <div className="hidden md:flex justify-between py-3 container mx-auto max-w-7xl px-4">
           <span className='flex items-center gap-2'>
             <Image
               src="/logo.png"
@@ -47,12 +47,12 @@ export default function Navigation() {
             </h3></NavigationLink>
           </span>
           <div className="flex items-center justify-center gap-4">
-            {/* <NavigationLink href="/">{t('home')}</NavigationLink> */}
             <NavigationLink href="/services">{t('services')}</NavigationLink>
+            <NavigationLink href="/clinics">{t('clinics')}</NavigationLink>
             <NavigationLink href="/about">{t('about')}</NavigationLink>
             <NavigationLink href="/blog">{t('blog')}</NavigationLink>
             <NavigationLink href="/contacts">{t('contacts')}</NavigationLink>
-            {/* <LocaleSwitcher /> */}
+            <LocaleSwitcher />
           </div>
           {/* <a className="border-2 border-primary text-primary py-3 px-6 rounded-2xl" href="tel:+79119460707">{t('call')}</a> */}
         </div>

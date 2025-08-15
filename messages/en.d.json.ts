@@ -32,6 +32,43 @@ declare const messages: {
       "hospitals": "Korean hospitals"
     }
   },
+  "ClinicsPage": {
+    "title": "Our Clinics",
+    "description": "We cooperate with leading medical institutions, offering a wide range of medical tourism services.",
+    "readMore": "Read more",
+    "view_all_partners": "View all partners",
+    "cta": {
+      "title": "Ready to start treatment abroad?",
+      "description": "Contact us and we will find the best solution tailored to your needs.",
+      "button": "Contact us"
+    },
+    "clinics": {
+      "id-hospital": {
+        "name": "ID Hospital",
+        "description": "Asia’s No. 1 and Korea’s leading plastic surgery hospital."
+      },
+      "sejong-hospital": {
+        "name": "Incheon Sejong Hospital – International Medical Center",
+        "description": "Thorough screening, infection control, isolation zones, positive/negative pressure systems, high safety standards."
+      },
+      "gil-medical": {
+        "name": "Gachon University Gil Medical Center",
+        "description": "Top oncology center, neurosurgery, and organ transplantation."
+      },
+      "view": {
+        "name": "View Plastic Surgery",
+        "description": "An outstanding team of Korea’s top plastic surgeons."
+      },
+      "live-dental": {
+        "name": "Live Dental Hospital",
+        "description": "Implants, orthodontics, aesthetic crowns, whitening, cavity treatment, tooth extraction. Over 3,000 foreign patients annually. English, Chinese, and Russian interpreters available."
+      },
+      "vance-clinic": {
+        "name": "Vance Clinic (Namdong-gu)",
+        "description": "Contouring, Botox, fillers, lipolytics, skin boosters, skincare. Known for its scientific approach and results-oriented methods. Popular for non-surgical face, nose, and chin corrections."
+      }
+    }
+  },
   "Directions": {
     "departments": "Treatment Areas",
     "dental": {
@@ -89,6 +126,7 @@ declare const messages: {
     "blog": "Blog",
     "about": "About Us",
     "contacts": "Contacts",
+    "clinics": "Clinics",
     "services": "Services",
     "call": "Call us",
     "close_menu": "Close Menu",
