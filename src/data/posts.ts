@@ -6,7 +6,7 @@ export interface PostContent {
 }
 
 export interface Post {
-  id: string;
+  slug: string;
   title: string;
   date: string;
   excerpt: string;
@@ -17,7 +17,7 @@ export interface Post {
 
 export const posts: Post[] = [
   {
-    id: "partnership-expansion",
+    slug: "partnership-expansion",
     title: "Расширение партнёрской сети с корейскими клиниками",
     date: "2025-07-26",
     excerpt: "Мы рады сообщить о новых партнёрствах с ведущими медицинскими учреждениями Южной Кореи и расширении наших возможностей.",
@@ -146,8 +146,8 @@ export function getAllPosts(): Post[] {
   return posts.sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
 }
 
-export function getPostById(id: string): Post | null {
-  return posts.find(post => post.id === id) || null;
+export function getPostById(slug: string): Post | null {
+  return posts.find(post => post.slug === slug) || null;
 }
 
 export function formatDate(dateString: string): string {

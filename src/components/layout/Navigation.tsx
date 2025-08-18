@@ -48,7 +48,7 @@ export default function Navigation() {
           </span>
           <div className="flex items-center justify-center gap-4">
             <NavigationLink href="/services">{t('services')}</NavigationLink>
-            <NavigationLink href="/clinics">{t('clinics')}</NavigationLink>
+            {/* <NavigationLink href="/clinics">{t('clinics')}</NavigationLink> */}
             <NavigationLink href="/about">{t('about')}</NavigationLink>
             <NavigationLink href="/blog">{t('blog')}</NavigationLink>
             <NavigationLink href="/contacts">{t('contacts')}</NavigationLink>
@@ -59,7 +59,7 @@ export default function Navigation() {
 
         {/* Мобильное меню */}
         <div className="md:hidden">
-          <div className="flex justify-between items-center px-4 py-3">
+          <div className="flex justify-between items-center px-2 py-3">
             <NavigationLink href="/">
               <h3 className="text-lg font-semibold text-gray-800">{t('name')}</h3>
             </NavigationLink>

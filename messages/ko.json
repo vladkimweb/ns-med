@@ -175,8 +175,9 @@
     "powerby": "Power by Vlad Kim"
   },
   "Partners": {
-    "title": "파트너",
-    "subtitle": "전 세계 주요 의료 기관과 협력하고 있습니다.",
+    "title": "우리의 클리닉",
+    "subtitle": "우리는 최고의 의료 기관들과 협력하여 다양한 의료 관광 서비스를 제공합니다.",
+    "readMore": "자세히 보기",
     "id_title": "아이디병원 (ID 병원)",
     "id_description": "한국 최고의 성형외과 병원, 아시아 No.1 아이디병원입니다.",
     "view_title": "뷰 성형외과",

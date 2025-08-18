@@ -28,3 +28,7 @@ h1,h2 {
   animation: scroll 30s linear infinite;
   width: max-content;
 }
+
+/* .border {
+  border-color: #e5e7eb; 
+} */

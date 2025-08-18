@@ -9,7 +9,7 @@ import PostContentRenderer from "@/components/PostContentRenderer";
 export async function generateStaticParams() {
   const posts = getAllPosts();
   return posts.map((post) => ({
-    id: post.id,
+    slug: post.slug,
   }));
 }
 
@@ -17,10 +17,10 @@ export async function generateStaticParams() {
 export async function generateMetadata({
   params
 }: {
-  params: Promise<{ id: string; locale: string }>
+  params: Promise<{ slug: string; locale: string }>
 }) {
-  const { id } = await params;
-  const post = getPostById(id);
+  const { slug } = await params;
+  const post = getPostById(slug);
 
   if (!post) {
     return {
@@ -53,10 +53,10 @@ export async function generateMetadata({
 export default async function BlogPostPage({
   params
 }: {
-  params: Promise<{ id: string; locale: string }>
+  params: Promise<{ slug: string; locale: string }>
 }) {
-  const { id } = await params;
-  const post = getPostById(id);
+  const { slug } = await params;
+  const post = getPostById(slug);
 
   if (!post) {
     return notFound();

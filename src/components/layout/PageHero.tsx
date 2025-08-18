@@ -5,7 +5,7 @@ type PageHeroProps = {
 
 export function PageHero({ title, subtitle }: PageHeroProps) {
   return (
-    <section className="relative py-24 flex justify-center items-center text-center overflow-hidden">
+    <section className="relative py-20 flex justify-center items-center text-center overflow-hidden">
       {/* Светлый фон с эффектом перелива */}
       <div className="absolute inset-0 bg-gradient-to-br from-white via-primary/5 to-white" />
 
@@ -17,10 +17,10 @@ export function PageHero({ title, subtitle }: PageHeroProps) {
           border border-white/40
         "
       >
-        <h1 className="text-5xl font-bold tracking-tight text-primary">
+        <h1 className="text-5xl font-bold tracking-tight text-primary uppercase">
           {title}
         </h1>
-        <p className="mt-3 text-lg text-gray-700">{subtitle}</p>
+        <p className="max-w-3xl mx-auto mt-3 text-lg text-gray-700">{subtitle}</p>
       </div>
 
       {/* Мягкие световые круги для глубины */}

@@ -187,8 +187,9 @@
     "submitting": "Sending..."
   },
   "Partners": {
-    "title": "Our Partners",
-    "subtitle": "Collaborating with leading medical institutions worldwide.",
+    "title": "Our Clinics",
+    "subtitle": "We cooperate with leading medical institutions, offering a wide range of medical tourism services.",
+    "readMore": "Read more",
     "id_title": "ID Hospital Korea",
     "id_description": "Korea's leading plastic surgery hospital, ID Hospital is the No.1 Plastic surgery in Asia.",
     "view_title": "View Plastic Surgery",
