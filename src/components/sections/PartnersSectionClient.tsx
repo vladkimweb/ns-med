@@ -41,9 +41,9 @@ export default function PartnersSectionClient({ t, className }: Props) {
       descriptionKey: 'id_description'
     },
     {
-      slug: 'seoul-eye-center',
+      slug: 'view',
       imageSrc: '/clinics/view-hospital.jpg',
-      imageAlt: 'Seoul National University Hospital',
+      imageAlt: 'View Plastic Surgery Clinic',
       titleKey: 'view_title',
       descriptionKey: 'view_description'
     },

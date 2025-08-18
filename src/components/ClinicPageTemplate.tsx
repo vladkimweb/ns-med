@@ -238,7 +238,7 @@ export default function ClinicPageTemplate({ clinic }: { clinic: Clinic }) {
       {/* =============================
           4. Врачи
       ============================= */}
-      <Section id="doctors" title="Врачи" subtitle="Ведущие специалисты клиники">
+      {/* <Section id="doctors" title="Врачи" subtitle="Ведущие специалисты клиники">
         {doctors?.length ? (
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {doctors.map((d) => (
@@ -251,40 +251,41 @@ export default function ClinicPageTemplate({ clinic }: { clinic: Clinic }) {
                 <div className="p-4 space-y-2">
                   <h3 className="text-lg font-semibold">{d.name}</h3>
                   <p className="text-sm text-muted-foreground">{d.title || "Врач-специалист"}</p>
-                  {/* <div className="flex flex-wrap gap-2 text-xs">
+                  <div className="flex flex-wrap gap-2 text-xs">
                     {typeof d.experienceYears === "number" && (
                       <Badge>Опыт: {d.experienceYears}+ лет</Badge>
                     )}
                     {d.languages?.length && (
                       <Badge>Языки: {d.languages.join(", ")}</Badge>
                     )}
-                  </div> */}
-                  {d.highlights?.length ? (
-                    <ul className="mt-2 list-disc list-inside text-sm">
-                      {d.highlights.slice(0, 5).map((h) => (
-                        <li key={h}>{h}</li>
-                      ))}
-                    </ul>
-                  ) : null}
-                </div>
-              </article>
-            ))}
-          </div>
+                  </div> 
+      {d.highlights?.length ? (
+        <ul className="mt-2 list-disc list-inside text-sm">
+          {d.highlights.slice(0, 5).map((h) => (
+            <li key={h}>{h}</li>
+          ))}
+        </ul>
+      ) : null}
+    </div>
+              </article >
+            ))
+}
+          </div >
         ) : (
-          <p className="text-muted-foreground">Добавьте карточки ведущих врачей с опытом и языками.</p>
-        )}
-      </Section>
+  <p className="text-muted-foreground">Добавьте карточки ведущих врачей с опытом и языками.</p>
+)}
+      </Section > */}
 
       {/* =============================
           5. Оборудование и технологии
       ============================= */}
       <Section id="equipment" title="Оборудование и технологии">
         {equipment?.length ? (
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-6">
             {equipment.map((e) => (
               <article key={e.name} className="rounded-2xl border p-4 space-y-2 h-full">
                 {e.photo ? (
-                  <img src={e.photo} alt={e.name} className="w-full h-36 object-cover rounded-xl" />
+                  <img src={e.photo} alt={e.name} className="w-full h-36 object-contain rounded-xl" />
                 ) : null}
                 <h3 className="text-base font-semibold">{e.name}</h3>
                 {e.description && (
@@ -371,7 +372,7 @@ export default function ClinicPageTemplate({ clinic }: { clinic: Clinic }) {
 
       {/* Optional contact anchor if you want to connect a form */}
       <div id="contact" />
-    </div>
+    </div >
   );
 }
 
