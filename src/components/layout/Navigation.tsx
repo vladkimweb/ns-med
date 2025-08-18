@@ -115,6 +115,9 @@ export default function Navigation() {
               <NavigationLink href="/about" onClick={() => setIsOpen(false)}>
                 {t('about')}
               </NavigationLink>
+              <NavigationLink href="/blog" onClick={() => setIsOpen(false)}>
+                {t('blog')}
+              </NavigationLink>
               <NavigationLink href="/contacts" onClick={() => setIsOpen(false)}>
                 {t('contacts')}
               </NavigationLink>
