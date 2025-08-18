@@ -4,14 +4,14 @@ import { ModalForm } from "./forms/ModalForm";
 // =============================
 // Types
 // =============================
-export type Doctor = {
-  name: string;
-  title?: string;
-  experienceYears?: number;
-  languages?: string[]; // e.g., ["русский", "английский", "корейский"]
-  photo?: string; // url or /public path
-  highlights?: string[]; // key achievements / specialties
-};
+// export type Doctor = {
+//   name: string;
+//   title?: string;
+//   experienceYears?: number;
+//   languages?: string[]; // e.g., ["русский", "английский", "корейский"]
+//   photo?: string; // url or /public path
+//   highlights?: string[]; // key achievements / specialties
+// };
 
 export type Equipment = {
   name: string;
@@ -37,7 +37,7 @@ export type Clinic = {
   gallery?: string[]; // room photos
   facts?: { label: string; value: string }[]; // extra facts like "специалистов: 120"
   specializations?: Specializations[];
-  doctors?: Doctor[];
+  // doctors?: Doctor[];
   equipment?: Equipment[];
   amenities?: string[]; // e.g., ["Одноместные палаты", "Wi‑Fi", "Питание"]
   internationalServices?: string[]; // override default list below
@@ -93,7 +93,7 @@ export default function ClinicPageTemplate({ clinic }: { clinic: Clinic }) {
     gallery,
     facts,
     specializations,
-    doctors,
+    // doctors,
     equipment,
     amenities,
     internationalServices,
