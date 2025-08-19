@@ -53,7 +53,7 @@ export async function generateMetadata(props: Omit<Props, 'children'>) {
       locale: 'ru',
       type: 'website',
       siteName: 'NS Medical',
-      url: 'https://med.ns-grp.com/ru',
+      url: 'https://med.ns-grp.com/',
       images: [
         {
           url: 'https://med.ns-grp.com/og.png',

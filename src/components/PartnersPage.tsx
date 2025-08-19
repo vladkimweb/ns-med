@@ -8,8 +8,8 @@ type PartnerKeys =
   | 'view_description'
   | 'incheon_sejong_title'
   | 'incheon_sejong_description'
-  | 'gachon_gil_title'
-  | 'gachon_gil_description'
+  | 'hangil_title'
+  | 'hangil_description'
   | 'live_dental_title'
   | 'live_dental_description'
   | 'vance_clinic_title'
@@ -30,42 +30,42 @@ export default function PartnersSection() {
   const partners: Partner[] = [
     {
       id: 'id',
-      imageSrc: '/partners/id-hospital.jpg',
+      imageSrc: '/clinics/id-hospital.jpg',
       imageAlt: 'Samsung Medical Center',
       titleKey: 'id_title',
       descriptionKey: 'id_description'
     },
     {
       id: 'view',
-      imageSrc: '/partners/view-hospital.jpg',
+      imageSrc: '/clinics/view-hospital.jpg',
       imageAlt: 'Seoul National University Hospital',
       titleKey: 'view_title',
       descriptionKey: 'view_description'
     },
     {
       id: 'incheon-sejong',
-      imageSrc: '/partners/incheon-sejong.jpeg',
+      imageSrc: '/clinics/incheon-sejong.jpeg',
       imageAlt: 'Incheon Sejong Hospital – International Healthcare Center',
       titleKey: 'incheon_sejong_title',
       descriptionKey: 'incheon_sejong_description'
     },
     {
-      id: 'gachon-gil',
-      imageSrc: '/partners/gachon-gil.jpg',
-      imageAlt: 'Gachon University Gil Medical Center',
-      titleKey: 'gachon_gil_title',
-      descriptionKey: 'gachon_gil_description'
+      id: 'hangil-eye-hospital',
+      imageSrc: '/clinics/hangil.jpg',
+      imageAlt: 'Hangil Medical Center',
+      titleKey: 'hangil_title',
+      descriptionKey: 'hangil_description'
     },
     {
       id: 'live-dental',
-      imageSrc: '/partners/live-dental.jpg',
+      imageSrc: '/clinics/live-dental.jpg',
       imageAlt: 'Live Dental Hospital',
       titleKey: 'live_dental_title',
       descriptionKey: 'live_dental_description'
     },
     {
       id: 'vance-clinic',
-      imageSrc: '/partners/vance-clinic.jpg',
+      imageSrc: '/clinics/vance-clinic.jpg',
       imageAlt: 'Vance Clinic, Namdong-gu',
       titleKey: 'vance_clinic_title',
       descriptionKey: 'vance_clinic_description'

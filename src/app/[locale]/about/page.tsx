@@ -1,5 +1,19 @@
 import Image from 'next/image';
 import { PageHero } from '@/components/layout/PageHero';
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "О нас | NS Group",
+  description: "Узнайте больше о компании NS Group: наша история, миссия и команда.",
+  openGraph: {
+    title: "О нас | NS Group",
+    description: "Узнайте больше о компании NS Group: наша история, миссия и команда.",
+    url: "https://med.ns-grp.com/ru/about",
+    siteName: "NS Group",
+    locale: "ru_RU",
+    type: "website",
+  },
+};
 
 const teamMembers = [
   {
