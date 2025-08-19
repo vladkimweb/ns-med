@@ -13,7 +13,7 @@ type PartnerKeys =
   | 'id_title' | 'id_description'
   | 'view_title' | 'view_description'
   | 'incheon_sejong_title' | 'incheon_sejong_description'
-  | 'gachon_gil_title' | 'gachon_gil_description'
+  | 'hangil_title' | 'hangil_description'
   | 'live_dental_title' | 'live_dental_description'
   | 'vance_clinic_title' | 'vance_clinic_description';
 
@@ -55,11 +55,11 @@ export default function PartnersSectionClient({ t, className }: Props) {
       descriptionKey: 'incheon_sejong_description'
     },
     {
-      slug: 'gachon-gil',
-      imageSrc: '/clinics/gachon-gil.jpg',
-      imageAlt: 'Gachon University Gil Medical Center',
-      titleKey: 'gachon_gil_title',
-      descriptionKey: 'gachon_gil_description'
+      slug: 'hangil-eye-hospital',
+      imageSrc: '/clinics/hangil.jpg',
+      imageAlt: 'HanGil Medical Center',
+      titleKey: 'hangil_title',
+      descriptionKey: 'hangil_description'
     },
     {
       slug: 'live-dental',
