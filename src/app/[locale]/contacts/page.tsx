@@ -12,7 +12,7 @@ export default function ContactsPage() {
           <Office
             city="Санкт-Петербург"
             address="17-я линия В.О., д. 4–6, лит. Е, оф. Т-214"
-            phones={['']}
+            phones={['+7 (800) 777-96-59']}
           />
           <Office
             city="Москва"
@@ -42,9 +42,9 @@ export default function ContactsPage() {
         <section className="text-center space-y-4">
           <h2 className="text-2xl font-semibold text-primary uppercase">Мы в соцсетях</h2>
           <div className="flex justify-center gap-6">
-            <a href="https://t.me/your_channel" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-primary">Telegram</a>
-            <a href="https://instagram.com/your_profile" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-primary">Instagram</a>
-            <a href="https://youtube.com/your_channel" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-primary">YouTube</a>
+            <a href="https://t.me/+JESSsBkYrjQzYzZi" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-primary">Telegram</a>
+            <a href="https://www.instagram.com/auto.ns.grp?igsh=MWtndWZmdjlpeTB6Mw%3D%3D&utm_source=qr" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-primary">Instagram</a>
+            <a href="https://www.youtube.com/@NSgrp_auto" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-primary">YouTube</a>
           </div>
         </section>
         {/* Фото офиса */}
