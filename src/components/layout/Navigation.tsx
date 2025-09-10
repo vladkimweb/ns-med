@@ -21,12 +21,12 @@ export default function Navigation() {
       {/* Верхняя строка с телефоном и языком */}
       <div className="hidden md:flex items-center justify-between text-sm text-gray-700 py-2 mx-auto max-w-7xl px-4">
         <div className="flex flex-wrap items-center gap-x-6 gap-y-1">
-          <span>📍 СПб: 17-я линия В.О., д. 4–6, лит. Е, оф. Т-214</span>
-          <span>📞 СПб: <a href="tel:+79617076254" className="hover:underline">+7 (961) 707-62-54</a></span>
-          <span>📍 МСК: ул. Профсоюзная, 65 к1, 4 этаж</span>
-          <span>📞 МСК:
-            <a href="tel:+79162104328" className="hover:underline ml-1">+7 (916) 210-43-28</a>,
-            <a href="tel:+79201865099" className="hover:underline ml-1">+7 (920) 186-50-99</a>
+          <span>СПб: 17-я линия В.О., д. 4–6, лит. Е, оф. Т-214</span>
+          {/* <span>📞 СПб: <a href="tel:+79617076254" className="hover:underline">+7 (961) 707-62-54</a></span> */}
+          <span>МСК: ул. Профсоюзная, 65 к1, 4 этаж</span>
+          <span>📞 Бесплатный звонок:
+            <a href="tel:+78007779659" className="hover:underline ml-1">+7 (800) 777-96-59</a>
+            {/* <a href="tel:+79201865099" className="hover:underline ml-1">+7 (920) 186-50-99</a> */}
           </span>
         </div>
         {/* <LocaleSwitcher /> */}
